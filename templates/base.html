@@ -1,0 +1,65 @@
+
+{% load staticfiles humanize %}
+<!DOCTYPE>
+<HTML>        
+    <head>
+        <title> Mobike </title>
+        <meta charset="UTF-8">          
+		<link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}" type="text/css">		
+		<link rel="stylesheet" href="{% static 'css2/style.css' %}" type="text/css">
+		
+		{% block extra_head %}{% endblock %}    
+    </head>
+
+    <body>
+        <div class="container"> 
+            
+                <div class="row" id="parte_media">                    
+                        <div class="cuadro_imagen col-xs-12" id="logo2">
+                            <img id="logo2" src="{% static 'Img/mobike.gif' %}">
+                        </div>                                      
+                </div>
+            
+            <nav>
+                <div class="row" id="navbar">
+                    <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="Index.html">Inicio</a></div>
+                    <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Historial</a></div>
+                    <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Arriendo </a></div>
+                    <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Nosotros</a></div>                
+                    <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Contacto</a></div>
+                    <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Administracion</a></div>                                             
+                </div> 			
+				<script  src="{% static 'js/sticky.js' %}" ></script>
+		
+            </nav>
+            
+            
+
+           
+            <section class="row principal middle-xs first-xs" id="contenido">   
+
+				{% block content %}
+				{% endblock %}                                          
+			</section>
+
+                <!--footer-->                
+                    <footer class= "row principal middle-xs first-xs">                        
+                        <div class="col-xs-12 col-md-8 first-md">
+                            <div id="footer">
+                                <h2>Mobike - Arquitectura de software 2018 ® - Nigun derecho Reservado </h2>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 first">
+                            <div id="footer">
+                                <ul id="lista_redes">
+                                    <!--<li><a href=""><img src="{% static 'Img/iconos/Linkedin.png' %}" ></a></li>-->
+                                    <li><a href=""><img src="{% static 'Img/iconos/YouTube.png' %}" ></a></li>
+                                    <li><a href=""><img src="{% static 'Img/iconos/WhatsApp.png' %}"> </a></li>                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>            
+        </div>                        
+    </body>
+
+</HTML>
