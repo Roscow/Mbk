@@ -1,30 +1,99 @@
-
+/* ESTILOS GENERALES */
 
 div{
     border: 0px black solid;
+	font-family: 'Roboto', sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+a,a:hover,a:visited {
+	text-decoration:none;
+}
+
+.contenedor{
+	margin: 0 auto;
+}
+/* ESTILOS DEL HEADER */
+.header{
+	width:100%;
+
+	
 }
 
 
-#logo2 img{
+
+#logo img{
     width: 20%;      
 }
-.cuadro{    
-    height: 65px;
-    margin-left: auto;
-    margin-right: auto;
+.navegacion .icon, a {
+    color:white;
+	text-decoration:none;
+}
+
+.navegacion {
+    background-color: #655643;
+    overflow: hidden;
+	font-size: 17px;
+	color: #F6F7BD;
+	text-align: center;
+    text-decoration: none;
+	width:100%;
+}
+
+.enlacemenu{
+	float: left;
     display: block;
-    text-align: center;
+	line-height:45px;
+	height:45px;
+
+	
+}
+
+.navegacion .enlacemenu a {
+    display:inline-block;
+    width:100%;
+    height:100%;
+
+}
+.navegacion .enlacemenu:hover  {
+    color: white;
+	background-color:#E6AC27;
+	
+}
+a.active {
+    background-color: beige;
+    color: black;
+}
+
+.enlacemenu span{
+	margin-left:10px;
+	margin-right:10px;
 }
 
 
-/* todo sobre el footer*/
+/* ESTILOS DEL CONTENIDO PRINCIPAL */
 
+
+
+
+/* ESTILOS DEL FOOTER */
+
+
+footer{
+	background-color : purple;    
+    color: black;
+    
+}
+
+#footer{
+    padding-bottom: 4%;
+    font-size: 15px;
+}
 #footer h2{ 
     font-size: 85%;
     text-align: center;
 }
-
-
 #footer li{
     display: inline;
     padding-left: 5px;
@@ -32,277 +101,16 @@ div{
     color: white;
    
 }
-
 #footer li img{
     width: 25px;
     border: 1px white solid;
     
 }
-
 #footer ul{
     text-align: center;
 }
 
 
-#footer{
-    padding-bottom: 4%;
-    font-size: 15px;
-}
 
 
-footer{
-	background-color : rgb(155, 132, 132);    
-    color: black;
-    
-}
-
-
-
- /* Style the navbar */
- #navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    
-    display: block;
-    color: #f2f2f2;    
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  } 
-
-.page {
-    text-align: center;           
-}
-
-/*
-#parte_media{
-    background-image: url("../sky.png");
-}
-*/
-
-
-.redireccion{
-    text-decoration: none;
-    
-}
-
-#entrada redireccion{
-    display: block;
-}
-
-.seccion{
-    border: 1px solid  black;
-    border-radius: 10px;
-    box-shadow:5px 10px rgb(94, 90, 90);   
-    margin-bottom: 20px;
-    margin-top: 50px;
-    padding-top: 20px;
-}
-
-/*
-div ul li{
-    list-style-type: disc;
-}
-*/
-.sec{
-    width: 25px;
-    align-content:  left;
-}
-
-table {
-    border: 2px ridge black;
-    margin: 10px;
-}
-table td{
-    border: 1.5px solid black;
-}
-
-td{
-    width: 1%;
-    padding: 10px;       
-    background-color: rgb(241, 235, 235);    
-}
-
-
-.page:hover{
-    background-color: rgb(104, 100, 100);   
-}
-
-/*
-form{
-    background-color: rgb(143, 114, 68);       
-    padding-top: 20px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-*/
-
-
-
-/* formulario */
-
-
-:-moz-placeholder{
-    color: blue;
-}
-
-::-webkit-input-placeholder{
-    color: blue;
-}
-
-*:focus {
-    outline: none;
-}
-
-.contact_form ul {
-    width:750px;
-    list-style-type:none;
-    list-style-position:outside;
-    margin:0px;
-    padding:0px;
-}
-.contact_form li{
-    padding:12px; 
-    border-bottom:1px solid #eee;
-    position:relative;
-}
-
-.contact_form li:first-child, .contact_form li:last-child {
-    border-bottom:1px solid #777;
-}
-
-.contact_form label {
-    width:150px;
-    margin-top: 3px;
-    display:inline-block;
-    float:left;
-    padding:3px;
-}
-.contact_form input {
-    height:30px; 
-    width:350px; 
-    padding:5px 8px;
-}
-.contact_form textarea {padding:8px; width:350px;}
-.contact_form button {margin-left:156px;}
-.contact_form #archivo {margin-left:156px;}
-
-
-.contact_form input, .contact_form textarea { 
-    border:1px solid #aaa;
-    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-    border-radius:2px;
-}
-.contact_form input:focus, .contact_form textarea:focus {
-    background: #fff; 
-    border:1px solid #555; 
-    box-shadow: 0 0 3px #aaa; 
-}
-/* Button Style */
-button.submit {
-    background-color: #68b12f;
-    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
-    background: -webkit-linear-gradient(top, #68b12f, #50911e);
-    background: -moz-linear-gradient(top, #68b12f, #50911e);
-    background: -ms-linear-gradient(top, #68b12f, #50911e);
-    background: -o-linear-gradient(top, #68b12f, #50911e);
-    background: linear-gradient(top, #68b12f, #50911e);
-    border: 1px solid #509111;
-    border-bottom: 1px solid #5b992b;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #9fd574;
-    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
-    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
-    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
-    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
-    color: white;
-    font-weight: bold;
-    padding: 6px 20px;
-    text-align: center;
-    text-shadow: 0 -1px 0 #396715;
-}
-button.submit:hover {
-    opacity:.85;
-    cursor: pointer; 
-}
-button.submit:active {
-    border: 1px solid #20911e;
-    box-shadow: 0 0 10px 5px #356b0b inset; 
-    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
-    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
-    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
-    -o-box-shadow: 0 0 10px 5px #356b0b inset;
-     
-}
-
-#archivo{
-    height: auto;
-    width: auto;
-}
-
-form {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
-.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
-.form_hint, .required_notification {font-size: 11px;}
-
-.contact_form h2 {
-    margin:0;
-    display: inline;
-}
-.required_notification {
-    color:#d45252; 
-    margin:5px 0 0 0; 
-    display:inline;
-    float:right;
-}
-
-.contact_form input:focus, .contact_form textarea:focus { /* add this to the already existing style */
-    padding-right:70px;
-}
-
-.contact_form input, .contact_form textarea { /* add this to the already existing style */
-    -moz-transition: padding .25s; 
-    -webkit-transition: padding .25s; 
-    -o-transition: padding .25s;
-    transition: padding .25s;
-}
-
-.contact_form input, .contact_form textarea {
-    padding-right:30px;
-}
-
-input:required, textarea:required {
-    background: #fff url(images/red_asterisk.png) no-repeat 98% center;
-}
-
-form { 
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;   
-    
-}
 
