@@ -36,14 +36,18 @@
 							{% endblock %}
 					</div>                                   
 				</div>
-				<div class="navegacion" id="barra">
-					<div class="enlacemenu"><a class="active" href="{% url 'index' %}"><span>Inicio<span></a></div>
-					<div class="enlacemenu"><a class="" href="#"><span>Login<span></a></div>
-					<div class="enlacemenu"><a href="#"><span>Arriendo<span> </a></div>
-					<div class="enlacemenu"><a href="#"><span>Nosotros<span></a></div>    
-					<div class="enlacemenu"><a href="#"><span>Contacto<span></a></div>
-					<a href="javascript:void(0);" class="icon" onclick="desplegarMenu()">&#9776;</a>                                           
-				</div> 	
+
+				<nav>
+					<div class="navegacion" id="barra">
+						<div class="enlacemenu"><a class="active" href="{% url 'index' %}"><span>Inicio<span></a></div>
+						<div class="enlacemenu"><a class="" href="#"><span>Login<span></a></div>
+						<div class="enlacemenu"><a href="#"><span>Arriendo<span> </a></div>
+						<div class="enlacemenu"><a href="#"><span>Nosotros<span></a></div>    
+						<div class="enlacemenu"><a href="#"><span>Contacto<span></a></div>
+						<a href="javascript:void(0);" class="icon" onclick="desplegarMenu()">&#9776;</a>                                           
+					</div> 	
+					<script  src="{% static 'js/sticky.js' %}" ></script>
+				</nav>
 			</div>
 			<div class="row principal middle-xs first-xs"> 
 	 
