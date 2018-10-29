@@ -1,7 +1,10 @@
 {% extends "base.html" %}
-{% load staticfiles %}
-{% block title %}Inicio{% endblock %}
-{% block content%}
- 
 
+{% block title %}Inicio{% endblock %}
+{% block sesion %}
+<div class="logeo">
+    <a class="lin2" href="{% url 'registro' %}">Registro</a>
+    <a class="lin2" href="#">Recuperar contraseña</a>
+    
+</div>	
 {% endblock %}

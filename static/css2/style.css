@@ -17,14 +17,12 @@ a,a:hover,a:visited {
 /* ESTILOS DEL HEADER */
 .header{
 	width:100%;
-
-	
 }
 
 
-
 #logo img{
-    width: 20%;      
+    width: 60% ;
+    height: auto;      
 }
 .navegacion .icon, a {
     color:white;
@@ -46,20 +44,16 @@ a,a:hover,a:visited {
     display: block;
 	line-height:45px;
 	height:45px;
-
-	
 }
 
 .navegacion .enlacemenu a {
     display:inline-block;
     width:100%;
     height:100%;
-
 }
 .navegacion .enlacemenu:hover  {
     color: white;
 	background-color:#E6AC27;
-	
 }
 a.active {
     background-color: beige;
@@ -110,7 +104,22 @@ footer{
     text-align: center;
 }
 
+.logeo{
+    border-radius: 2%;
+    box-shadow: 3px 3px;
+    margin :10px;
+    border: 1px black solid;
+}
 
+.logeo a{
+    margin: 20px;
+}
+
+.lin2{
+    color: blue;
+    font-size: 12px;
+    text-decoration-line:underline;
+}
 
 
 

@@ -304,3 +304,23 @@ form {
     
 }
 
+
+
+.logeo{
+    border-radius: 2%;
+    box-shadow: 3px 3px;
+    margin :10px;
+    border: 1px black solid;
+}
+
+.logeo a{
+    margin: 20px;
+}
+
+.lin2{
+    color: blue;
+    font-size: 12px;
+    text-decoration-line:underline;
+}
+
+

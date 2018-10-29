@@ -7,6 +7,7 @@
         <meta charset="UTF-8">          
 		<link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}" type="text/css">		
 		<link rel="stylesheet" href="{% static 'css2/style.css' %}" type="text/css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 		<link rel="stylesheet" href="{% static 'css2/nav.css' %}" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 		<script>
@@ -24,14 +25,20 @@
     <body>
 		<div class="contenedor col-xs-12 col-sm-11 col-md-8 col-lg-8">
 			<div class="header">
-				<div class="row" id="parte_media">                    
-					<div class="cuadro_imagen col-xs-12" id="logo">
+				<div class="row " id="parte_media">   
+
+					<div class=" col-xs-4" id="logo">
 						<img id="logo" src="{% static 'Img/mobike.gif' %}">
-					</div>                                      
+					</div>    
+					<div class=" col-xs-8" >
+							{% block sesion %}
+																													
+							{% endblock %}
+					</div>                                   
 				</div>
 				<div class="navegacion" id="barra">
-					<div class="enlacemenu"><a class="" href="{% url 'index' %}"><span>Inicio<span></a></div>
-					<div class="enlacemenu"><a class="active" href="#"><span>Historial<span></a></div>
+					<div class="enlacemenu"><a class="active" href="{% url 'index' %}"><span>Inicio<span></a></div>
+					<div class="enlacemenu"><a class="" href="#"><span>Login<span></a></div>
 					<div class="enlacemenu"><a href="#"><span>Arriendo<span> </a></div>
 					<div class="enlacemenu"><a href="#"><span>Nosotros<span></a></div>    
 					<div class="enlacemenu"><a href="#"><span>Contacto<span></a></div>

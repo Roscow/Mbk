@@ -1,0 +1,12 @@
+{% extends "templates/index.html" %}
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<h1>registro</h1>
+    <div>
+        <form method="POST" class="posrt-form">
+            {% csrf_token %} 
+            {{form.as_p}}
+        </form>
+    </div>
+{% endblock %}  	
