@@ -13,7 +13,8 @@ class Usuario(models.Model):
 	region = models.CharField(max_length=50)
 	comunaDomicilio = models.CharField(max_length=50)
 	comunaTrabajo = models.CharField(max_length=50)   
-
+	usuario = models.CharField(null=True,max_length=50)
+	contraseña = models.CharField(null=True, max_length=50)
      
 
 	def publish(self):
@@ -22,16 +23,3 @@ class Usuario(models.Model):
 	def __str__(self):
                 return self.nombre + ' ' +self.apellido        
                    
-	
-class Cuenta(models.Model):
-	run = models.ForeignKey(Usuario, on_delete=models.CASCADE)	
-	usuario = models.CharField(primary_key=True, max_length=50)
-	contraseña = models.CharField(max_length=50)	
-
-	def publish(self):
-                self.save()
-        
-	def __str__(self):
-                return self.usuario       
-                   
-	

@@ -1,5 +1,5 @@
 from django.shortcuts import render , redirect 
-from .forms import RegistroForm
+from .forms import RegistroForm , RecuperarForm
 
 
 def registro(request):
@@ -13,6 +13,14 @@ def registro(request):
         form = RegistroForm()
     return render(request, 'templates/registro.html', {'form': form} )
 
+def recuperacion(request):
+    if request.method == 'POST':
+        form = RecuperarForm(request.POST)
+        if form.is_valid():                       
+            return redirect('/admin/ ')
+    else:
+        form = RecuperarForm()
+    return render(request, 'templates/recuperar.html', {'form': form} )
 
 
 	

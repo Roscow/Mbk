@@ -1,11 +1,11 @@
 from django import forms
 from .models import Usuario
-from .models import Cuenta
+
 
 class RegistroForm(forms.ModelForm):
     class Meta:
         model = Usuario
-        fields =[
+        fields =[			
             'run',
 	        'nombre' ,
 	        'apellido' ,
@@ -15,6 +15,8 @@ class RegistroForm(forms.ModelForm):
 	        'region' ,
 	        'comunaDomicilio' ,
 	        'comunaTrabajo' ,
+			'usuario',
+			'contraseña',
         ]
 
         labels ={
@@ -27,6 +29,8 @@ class RegistroForm(forms.ModelForm):
 	        'region' :'Region',
 	        'comunaDomicilio':'Comuna de domicilio' ,
 	        'comunaTrabajo':'No vivo en la comuna pero trabajo en ella' ,
+			'usuario': 'Usuario',
+			'contraseña': 'Contraseña',
 		}
 
         widgets ={
@@ -39,4 +43,19 @@ class RegistroForm(forms.ModelForm):
 	        'region' : forms.TextInput(),
 	        'comunaDomicilio': forms.TextInput(),
 	        'comunaTrabajo': forms.CheckboxInput(),
+			'usuario': forms.TextInput(),
+			'contraseña': forms.TextInput(),
 		}
+		
+class RecuperarForm(forms.ModelForm):
+	class Meta:
+		model = Usuario
+		fields =[
+			'correo',
+		]
+
+		labels ={
+            'correo':'Ingrese su correo registrado para recibir su contraseña',
+		}
+        	  
+		 
