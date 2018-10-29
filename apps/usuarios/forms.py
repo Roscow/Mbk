@@ -1,5 +1,5 @@
 from django import forms
-from .models import Usuario
+from .models import Usuario, Cuenta
 
 
 class RegistroForm(forms.ModelForm):
@@ -55,7 +55,18 @@ class RecuperarForm(forms.ModelForm):
 		]
 
 		labels ={
-            'correo':'Ingrese su correo registrado para recibir su contraseña',
+            'correo':'Ingrese correo registrado para recibir su contraseña',
 		}
         	  
-		 
+class LoginForm(forms.ModelForm):
+	class Meta:
+		model = Cuenta
+		fields =[
+			'usuario',
+			'contraseña',
+		]
+
+		labels ={
+            'usuario': forms.TextInput(),
+			'contraseña': forms.PasswordInput(),
+		}

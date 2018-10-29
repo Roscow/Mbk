@@ -1,14 +1,15 @@
 {% extends "base.html" %}
-{% load staticfiles %}
-{% block title %}Mobike{% endblock %}
+{% block title %}Login{% endblock %}
 {% block extra_head %}{% endblock %}
-{% block logeo %}
+{% block sesion %}
 <div class="logeo">
-        <a class="lin2" href="#">Registro</a>
-        <a class="lin2" href="#">Recuperar contraseña</a>
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_table }}   
-        </form>	
-</div>	
+        <form method="POST" class="posrt-form">
+                {% csrf_token %} 
+                {{form.as_p}}
+                <button type="submit" id="">Ingresar</button>
+            </form>
+        <a class="lin2" href="{% url 'registro' %}">Registro</a>
+        <a class="lin2" href="{% url 'recuperacion' %}">Recuperar contraseña</a>
+        
+    </div>
 {% endblock %}

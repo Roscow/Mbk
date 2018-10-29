@@ -23,3 +23,12 @@ class Usuario(models.Model):
 	def __str__(self):
                 return self.nombre + ' ' +self.apellido        
                    
+
+
+class Cuenta(models.Model):	
+	usuario = models.CharField(null=True,max_length=50)
+	contraseña = models.CharField(null=True, max_length=50)
+        
+	def __str__(self):
+                return self.usuario     
+                   
