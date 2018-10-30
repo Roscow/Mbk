@@ -115,16 +115,16 @@ footer{
     margin: 20px;
 }
 
-.lin2{
-    color: blue;
+.lin2 a{
+    color: orange;
     font-size: 12px;
-    text-decoration-line:underline;
+    text-decoration-line:none;
 }
 
-.lin3{
-    color: blue;
+.lin3 a{
+    color: orange;
     font-size: 12px;
-    text-decoration-line:underline;
+    text-decoration-line:none;
     padding: 10px;    
 }
 
