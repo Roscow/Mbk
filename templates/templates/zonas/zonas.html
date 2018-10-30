@@ -1,0 +1,31 @@
+
+{% extends "templates/administracion.html" %}
+{% load staticfiles humanize %}
+{% block title %}Administracion{% endblock %}
+
+{% block pestaña_admin %}   
+    <div class="enlacemenu"><a href="#"><span>Administrar<span></a></div>
+{% endblock %}
+
+{% block content %}
+<nav >
+        <div class="row navegacion" id="navbar">
+            <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="Index.html">Zonas</a></div>
+            <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Usuarios</a></div>
+            <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Reportes </a></div>
+            <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#"></a></div>                
+            <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#"></a></div>
+            <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#"></a></div>                                             
+        </div> 			
+      
+        
+      
+        <a class="lin3" href="{% url 'consultar'%}">Buscar</a>
+        <a class="lin3" href="{% url 'listar'%}">Ver todas</a>
+        <a class="lin3" href="{% url 'agregar'%}">Agregar</a>
+        <a class="lin3" href="#">Modificar</a>
+        <a class="lin3" href="#">Eliminar</a>
+        {% block opcion %}{% endblock %}
+      
+</nav>
+{% endblock %}     

@@ -2,11 +2,11 @@
 {% block title %}Recuperacion{% endblock %}
 
 {% block content %}
-<h1>registro</h1>
+<h1>Recuperacion</h1>
     <div>
         <form method="POST" class="posrt-form">
             {% csrf_token %} 
-            {{form.as_p}}
+            {{form.as_table}}
             <button type="submit" id="">Recuperar</button>
         </form>
     </div>

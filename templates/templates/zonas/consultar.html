@@ -1,0 +1,15 @@
+{% extends "templates/zonas/zonas.html" %}
+{% load staticfiles humanize %}
+{% block title %}modificar zonas{% endblock %}
+
+
+{% block opcion %}
+    <div>
+        <form method="POST" class="posrt-form">
+            {% csrf_token %}
+            
+            {{form.as_p}}
+            <button type="submit" id="">Buscar</button>
+        </form>
+    </div>
+{% endblock %}     

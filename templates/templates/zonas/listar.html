@@ -1,0 +1,18 @@
+{% extends "templates/zonas/zonas.html" %}
+{% load staticfiles humanize %}
+{% block title %}listar zonas{% endblock %}
+
+
+{% block opcion %}
+<div class="row">
+    {% for i in zonas %}
+        <div class="zona_box col-xs-12">
+            <h1 class="tit">{{i.nombre}}</h1>           
+            <p> {{i.direccion}}</p>
+            <p>{{i.capacidad}}</p>
+            <p> {{i.stock}}</p>
+        </div>
+       
+    {% endfor %}
+</div>
+{% endblock %}     

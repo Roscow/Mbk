@@ -1,15 +1,14 @@
-{% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% extends "templates/index.html" %}
+{% block title %}Normal{% endblock %}
 {% block extra_head %}{% endblock %}
-{% block sesion %}
-<div class="logeo">
-        <form method="POST" class="posrt-form">
-                {% csrf_token %} 
-                {{form.as_p}}
-                <button type="submit" id="">Ingresar</button>
-            </form>
-        <a class="lin2" href="{% url 'registro' %}">Registro</a>
-        <a class="lin2" href="{% url 'recuperacion' %}">Recuperar contraseña</a>
-        
+{% block login %}
+<!--
+    <div>
+        <form id= "form1" method="POST" class="posrt-form">
+            {% csrf_token %} 
+            {{form.as_p}}
+            <button type="submit" id="">Ingresar</button>            
+        </form>
     </div>
-{% endblock %}
+    -->
+{% endblock %}  

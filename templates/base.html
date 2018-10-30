@@ -43,13 +43,14 @@
 						<div class="enlacemenu"><a class="" href="#"><span>Login<span></a></div>
 						<div class="enlacemenu"><a href="#"><span>Arriendo<span> </a></div>
 						<div class="enlacemenu"><a href="#"><span>Nosotros<span></a></div>    
-						<div class="enlacemenu"><a href="#"><span>Contacto<span></a></div>
+						<div class="enlacemenu"><a href="#"><span>Contacto<span></a></div>						
+						{% block pestaña_admin %} {% endblock %} 
 						<a href="javascript:void(0);" class="icon" onclick="desplegarMenu()">&#9776;</a>                                           
 					</div> 	
 					<script  src="{% static 'js/sticky.js' %}" ></script>
 				</nav>
 			</div>
-			<div class="row principal middle-xs first-xs"> 				
+			<div class="row"> 				
 					{% block content %}
 					
 					{% endblock %}                                          

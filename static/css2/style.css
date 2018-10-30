@@ -121,5 +121,27 @@ footer{
     text-decoration-line:underline;
 }
 
+.lin3{
+    color: blue;
+    font-size: 12px;
+    text-decoration-line:underline;
+    padding: 10px;    
+}
 
+.zona_box{
+    background-color: beige;
+    margin: 3%;
+    border-radius: 15px;
+    box-shadow: gray 5px 10px;
+    padding: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    border: 1px black solid;
+}
+
+tit{
+    text-align:left;
+}
 

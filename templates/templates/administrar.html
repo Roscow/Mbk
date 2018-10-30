@@ -1,0 +1,21 @@
+
+{% extends "templates/administracion.html" %}
+{% load staticfiles humanize %}
+{% block title %}Administracion{% endblock %}
+
+{% block pestaña_admin %}   
+    <div class="enlacemenu"><a href="#"><span>Administrar<span></a></div>
+{% endblock %}
+
+{% block content %}
+<nav>
+        <div class="row" id="navbar">
+                <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="{% url 'zonas' %}">Zonas</a></div>
+                <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Usuarios</a></div>
+                <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">Reportes </a></div>
+                <div class="col-xs-12 col-sm-2 col-md-2 page"><a href="#">?</a></div>                                            
+        </div> 			
+        <script  src="{% static 'js/sticky.js' %}" ></script>
+
+    </nav>
+{% endblock %}     

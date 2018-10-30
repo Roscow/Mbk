@@ -67,6 +67,10 @@ class LoginForm(forms.ModelForm):
 		]
 
 		labels ={
+            'usuario': 'Usuario',
+			'contraseña':'Contraseña',
+		}
+		widgets ={
             'usuario': forms.TextInput(),
 			'contraseña': forms.PasswordInput(),
 		}

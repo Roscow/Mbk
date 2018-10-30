@@ -25,12 +25,31 @@ def recuperacion(request):
     return render(request, 'templates/recuperar.html', {'form': form} )
 
 
+def index(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():                       
+            return redirect('/admin/ ')
+    else:
+        form = LoginForm()
+    return render(request, 'templates/index.html', {'form': form} )
+
 
 
 def login(request):
-    return render(request, 'templates/login.html', {'form': form} )
+    return render(request, 'templates/login.html')
 
 
-	
-def index(request):
-    return render(request, 'templates/index.html', {})
+
+
+def administracion(request):
+    return render(request, 'templates/administracion.html')
+
+
+
+def administrar(request):
+    return render(request, 'templates/administrar.html')
+
+
+def zonas(request):
+    return render(request, 'templates/zonas/zonas.html')

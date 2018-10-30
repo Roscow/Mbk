@@ -1,0 +1,15 @@
+
+{% extends "templates/zonas/zonas.html" %}
+{% load staticfiles humanize %}
+{% block title %}Agregar zona{% endblock %}
+
+
+{% block opcion %}
+<div>
+        <form method="POST" class="posrt-form">
+            {% csrf_token %} 
+            {{form.as_p}}
+            <button type="submit" id="">Agregar</button>
+        </form>
+    </div>
+{% endblock %}     
